@@ -14,7 +14,7 @@ $$
 $$
 where $A^T = (D, D{X^*}^T), \beta^T=(\theta, \eta^T)$ and $\gamma$ denotes nuisance parameters.
 
-####DML1
+#### DML1
 
 Let $\hat{h}_k(x)$and $\hat{l}_k(x)$ denote the ML estimators for $A$ and $Y$ respectively from $I_k^c$. For each fold $I_k$
 $$
