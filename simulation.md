@@ -18,7 +18,7 @@ where $A^T = (D, D{X^*}^T), \beta^T=(\theta, \eta^T)$ and $\gamma$ denotes nuisa
 
 #### DML1
 
-Let $\hat{h}_k(x)$ and $\hat{l}_k(x)$ denote the ML estimators for $A$ and $Y$ respectively from $I_k^c$. For each fold $I_k$
+Let $\hat{h_k}(x)$ and $\hat{l_k}(x)$ denote the ML estimators for $A$ and $Y$ respectively from $I_k^c$. For each fold $I_k$
 $$
 \hat{\beta}_k =\left(\sum_{i\in I_k}\left[a_i-\hat{h}_{k}(x_i)\right]\left[a_i-\hat{h}_{k}(x_i)\right]^T\right)^{-1}\left(\sum_{i\in I_k}\left[y_i-\hat{l}_{k}(x_i)\right]\left[a_i-\hat{h}_{k}(x_i)\right]\right)\\
 \hat{\beta} = \frac{1}{K}\sum_{k=1}^{K}\hat{\beta}_k
