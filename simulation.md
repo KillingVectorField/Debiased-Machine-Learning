@@ -34,9 +34,11 @@ $$
 
 $$
 \begin{align}
-&\hat{J_0}=\frac{1}{n}\sum_{k=1}^{K}\sum_{i\in I_k}[a_i-\hat{h}_k(x_i)][a_i-\hat{h}_k(x_i)]^T\\
-&\hat{\sigma}^2=\hat{J_0}^{-1}\frac{1}{n}\sum_{k=1}^{K}\psi(x_i;\hat{\beta},\hat{h}_k, \hat{l}_k)\psi(x_i;\hat{\beta},\hat{h}_k, \hat{l}_k)^T[{\hat{J_0}^{-1}}]^T
-\end{align}
+\hat{J_0}=\frac{1}{n}\sum_{k=1}^{K}\sum_{i\in I_k}[a_i-\hat{h}_k(x_i)][a_i-\hat{h}_k(x_i)]^T
+$$
+$$
+\hat{\sigma}^2=\hat{J_0}^{-1}\frac{1}{n}\sum_{k=1}^{K}\psi(x_i;\hat{\beta},\hat{h}_k, \hat{l}_k)\psi(x_i;\hat{\beta},\hat{h}_k, \hat{l}_k)^T[{\hat{J_0}^{-1}}]^T
+
 $$
 
 ### Simulation Design
