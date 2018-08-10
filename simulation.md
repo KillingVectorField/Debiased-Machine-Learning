@@ -20,24 +20,26 @@ where $A^T = (D, D{X^*}^T), \beta^T=(\theta, \eta^T)$ and $\gamma$ denotes nuisa
 
 Let $\hat{h_k}(x)$ and $\hat{l_k}(x)$ denote the ML estimators for $A$ and $Y$ respectively from $I_k^c$. For each fold $I_k$
 $$
-\hat{\beta_k} =\left(\sum_{i\in I_k}\left[a_i-\hat{h_k}(x_i)\right]\left[a_i-\hat{h_k}(x_i)\right]^T\right)^{-1}\left(\sum_{i\in I_k}\left[y_i-\hat{l_k}(x_i)\right]\left[a_i-\hat{h_k}(x_i)\right]\right)\\
+\hat{\beta_k} =\left(\sum_{i\in I_k}\left[a_i-\hat{h_k}(x_i)\right]\left[a_i-\hat{h_k}(x_i)\right]^T\right)^{-1}\left(\sum_{i\in I_k}\left[y_i-\hat{l_k}(x_i)\right]\left[a_i-\hat{h_k}(x_i)\right]\right)
+$$
+$$
 \hat{\beta} = \frac{1}{K}\sum_{k=1}^{K}\hat{\beta_k}
 $$
 
 #### DML2
 
 $$
-\hat{\beta} =\left(\sum_{k=1}^{K}\sum_{i\in I_k}\left[a_i-\hat{h}_k(x_i)\right]\left[a_i-\hat{h}_k(x_i)\right]^T\right)^{-1}\left(\sum_{k=1}^{K}\sum_{i\in I_k}\left[y_i-\hat{l}_k(x_i)\right]\left[a_i-\hat{h}_k(x_i)\right]\right)
+\hat{\beta} =\left(\sum_{k=1}^{K}\sum_{i\in I_k}\left[a_i-\hat{h_k}(x_i)\right]\left[a_i-\hat{h_k}(x_i)\right]^T\right)^{-1}\left(\sum_{k=1}^{K}\sum_{i\in I_k}\left[y_i-\hat{l_k}(x_i)\right]\left[a_i-\hat{h_k}(x_i)\right]\right)
 $$
 
 #### Covariance
 
 $$
 \begin{align}
-\hat{J_0}=\frac{1}{n}\sum_{k=1}^{K}\sum_{i\in I_k}[a_i-\hat{h}_k(x_i)][a_i-\hat{h}_k(x_i)]^T
+\hat{J_0}=\frac{1}{n}\sum_{k=1}^{K}\sum_{i\in I_k}[a_i-\hat{h_k}(x_i)][a_i-\hat{h_k}(x_i)]^T
 $$
 $$
-\hat{\sigma}^2=\hat{J_0}^{-1}\frac{1}{n}\sum_{k=1}^{K}\psi(x_i;\hat{\beta},\hat{h}_k, \hat{l}_k)\psi(x_i;\hat{\beta},\hat{h}_k, \hat{l}_k)^T[{\hat{J_0}^{-1}}]^T
+\hat{\sigma}^2=\hat{J_0}^{-1}\frac{1}{n}\sum_{k=1}^{K}\psi(x_i;\hat{\beta},\hat{h_k}, \hat{l_k})\psi(x_i;\hat{\beta},\hat{h_k}, \hat{l_k})^T[{\hat{J_0}^{-1}}]^T
 
 $$
 
