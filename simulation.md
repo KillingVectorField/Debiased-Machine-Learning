@@ -46,8 +46,9 @@ $$
 ### Simulation Design
 
 $$
-y_i = d_i + (d_ix_i^*)'\mathbf{1}+x_i'(c_y\theta_0)+u_i
+y_i = d_i + (d_ix_i*) \mathbf{1} + x_i'(c_y\theta_0)+u_i
 $$
+
 $$
 d_i = \frac{\exp\{x_i'(c_d\theta_0)\}}{1+\exp\{x_i'(c_d\theta_0)\}} +v_i
 
