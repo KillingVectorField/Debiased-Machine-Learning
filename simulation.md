@@ -1,17 +1,19 @@
 ### Model
 
-$
-\begin{align}
-& Y=D\theta_0+(DX^*)^T\eta_0+g_0(X)+U\\
-& D=m_0(X) + V\\
-& E[U|X, D]=0, E[V|X]=0, E[UV|X]=0
-\end{align}
-$
+$$
+Y=D\theta_0+(DX^*)^T\eta_0+g_0(X)+U
+$$
+$$
+D=m_0(X) + V
+$$
+$$
+E[U|X, D]=0, E[V|X]=0, E[UV|X]=0
+$$
 
 Neyman Orthogonal Score:
-$
+$$
 \psi(X;\beta,\gamma) = (Y-A^T\beta-E[Y-A^T\beta|X])(A-E[A|X])
-$
+$$
 where $A^T = (D, D{X^*}^T), \beta^T=(\theta, \eta^T)$ and $\gamma$ denotes nuisance parameters.
 
 #### DML1
