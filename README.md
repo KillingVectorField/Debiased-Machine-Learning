@@ -1,4 +1,4 @@
 # Debiased-Machine-Learning
 Debiased Machine Learing
 
-sample code is in run.py
+sample code is presented in run.py
