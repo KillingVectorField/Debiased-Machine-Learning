@@ -54,5 +54,5 @@ d_i = \frac{\exp\{x_i'(c_d\theta_0)\}}{1+\exp\{x_i'(c_d\theta_0)\}} +v_i
 
 $$
 
-where $d_ix_i^*$ denotes the interaction term.
+where $d_ix_i*$ denotes the interaction term.
 
