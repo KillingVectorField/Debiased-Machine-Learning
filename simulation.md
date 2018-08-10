@@ -35,7 +35,7 @@ $$
 #### Covariance
 
 $$
-\begin{align}
+
 \hat{J_0}=\frac{1}{n}\sum_{k=1}^{K}\sum_{i\in I_k}[a_i-\hat{h_k}(x_i)][a_i-\hat{h_k}(x_i)]^T
 $$
 $$
@@ -46,10 +46,11 @@ $$
 ### Simulation Design
 
 $$
-\begin{align}
-&y_i = d_i + (d_ix_i^*)'\mathbf{1}+x_i'(c_y\theta_0)+u_i\\
-&d_i = \frac{\exp\{x_i'(c_d\theta_0)\}}{1+\exp\{x_i'(c_d\theta_0)\}} +v_i
-\end{align}
+y_i = d_i + (d_ix_i^*)'\mathbf{1}+x_i'(c_y\theta_0)+u_i
+$$
+$$
+d_i = \frac{\exp\{x_i'(c_d\theta_0)\}}{1+\exp\{x_i'(c_d\theta_0)\}} +v_i
+
 $$
 
 where $d_ix_i^*$ denotes the interaction term.
