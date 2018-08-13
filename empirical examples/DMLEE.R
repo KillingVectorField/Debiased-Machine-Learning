@@ -305,15 +305,15 @@ PLIVRMestimator <- function(data, k, MLmethod, DML = 2, nsplit = 100, mergemetho
 #   select(-t1, -t2, -t3, -t5, -t6) %>%
 #   rename(D = t4, Y = logdur)
 
-counts <- 1
-reslst <- list()
-for(k in c(2, 5)){
-  for(MLmethod in c("Lasso", "NeuralNet","Boosting", "Reg.tree", "randomForest")){
-    reslst[[counts]] <- IRMestimator(data1, k, MLmethod)
-    counts <- counts + 1
-  }
-}
-print(reslst)
+# counts <- 1
+# reslst <- list()
+# for(k in c(2, 5)){
+#   for(MLmethod in c("Lasso", "NeuralNet","Boosting", "Reg.tree", "randomForest")){
+#     reslst[[counts]] <- IRMestimator(data1, k, MLmethod)
+#     counts <- counts + 1
+#   }
+# }
+# print(reslst)
 
 
 # # reading Institutions Effect data(raw data were pre-processed in Stata)
