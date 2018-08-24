@@ -39,8 +39,3 @@ def data_design_3(n,p):
     Y = D * Y_1 + (1 - D) * Y_0
 
     return X,Z,D,Y
-
-
-
-print(data_design_3(100,3))
-
