@@ -1,10 +1,11 @@
 import numpy as np
 from scipy import stats
 
-def data_design_3(n,p):
+def data_design_3(n,p,seed=1):
     '''
     generate data for design 3
     '''
+    np.random.seed(seed)
     theta_0 = np.array([1 / j ** 2 for j in range(1,p + 1)])
     gamma_0 = -0.5
     delta = 1
